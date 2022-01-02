@@ -48,7 +48,7 @@ extension ViewController: WKNavigationDelegate {
 
         var requestTarget: String? = ""
         if let url = navigationAction.request.url, let host = url.host {
-            if host.contains("www."), !host.contains("google") {
+            if host.contains("www.") {
                 let clean = host.replacingOccurrences(of: "www.", with: "")
                 requestTarget = clean
             } else {
@@ -67,13 +67,8 @@ extension ViewController: WKNavigationDelegate {
                     UIApplication.shared.openURL(url)
                 }
             }
-
-            if host.contains("google") {
-                decisionHandler(.allow)
-            } else {
-                print("Redirected to browser. No need to open it locally")
-                decisionHandler(.cancel)
-            }
+            print("Redirected to browser. No need to open it locally")
+            decisionHandler(.cancel)
         } else {
             print("Open it locally")
             decisionHandler(.allow)
