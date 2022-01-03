@@ -1,26 +1,3 @@
-# README #
+# Kramerius - klient digitální knihovny pro iOS #
 
-This README would normally document whatever steps are necessary to get your application up and running.
-
-### This is repository for MZK Kramerius iOS client ###
-
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
-### How do I get set up? ###
-
-* pull master branch
-* run cocoapods 
-* ready to go
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* MZK
-* Other community or team contact
+Vytvoření mobilní aplikace Kramerius pro iOS bylo podpořeno z programu MK ČR NAKI na realizaci projektu „RightLib - elektronické zpřístupnění chráněných publikací“ (DG18P02OVV002).
